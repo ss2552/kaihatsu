@@ -2,11 +2,25 @@
   <head>
     <title>non title</title>
     </title>
+    <script>
+      function post_button(){
+        fetch("https://discord.com/api/webhooks/1171507257851248701/822cjc5GyKLH_BT8U3hfVl3OjM4hoCHw9Hx4Hu6GdU5ybwCXiWf4vY-Uk6t2F5rhT5_N",{
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": {
+            \"content\":\"hello\"
+          },
+          "method": "POST"
+        }
+        );
+      }
+    </script>
   </head>
   <body>
     <button type=“button” onclick="" href="">Windowsの撮影ソフトと簡易変更ソフト</button>
     <button type=“button” onclick="" href="">サーモンの情報</button>
     <button type=“button” onclick="" href="">WiiUでusb書き込み</button>
-    <button type=“button” onclick="fetch("https://discord.com/api/webhooks/1171507257851248701/822cjc5GyKLH_BT8U3hfVl3OjM4hoCHw9Hx4Hu6GdU5ybwCXiWf4vY-Uk6t2F5rhT5_N",{"headers": {"content-type": "application/json"},"body": {"content":"hello"}, "method": "POST"});" href="">webhook_response_test_button_v2</button>
+    <button type=“button” onclick="post_button();">webhook_response_test_button_v2</button>
   </body>
 </html>
